@@ -31,13 +31,13 @@ fn smoothstep(edge0: f32, edge1: f32, x: f32) -> f32 {
     x * x * (3.0 - 2.0 * x)
 }
 
-fn circle(x: f32, y: f32, radius: f32, feather: f32) -> f32 {
+fn disk(x: f32, y: f32, radius: f32, feather: f32) -> f32 {
     let x = x*x+y*y;
     smoothstep(x,x+feather, radius*radius)
 }
 
 fn donut(x: f32, y: f32, outer_radius: f32, inner_radius: f32, feather: f32) -> f32 {
-    circle(x, y, outer_radius, feather) - circle(x, y, inner_radius, feather)
+    disk(x, y, outer_radius, feather) - disk(x, y, inner_radius, feather)
 }
 
 fn main() {
