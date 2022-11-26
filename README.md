@@ -4,6 +4,9 @@ cdtk-cpu-pixel-shader is a rust program that render to the window's buffer direc
 Tutorial: https://www.youtube.com/watch?v=Rr93h-exnPA
 
 Dependencies:
+
 Windowing library (winit): https://github.com/rust-windowing/winit
+
 Window buffer library (softbuffer): https://github.com/john01dav/softbuffer
+
 Multithreading library (rayon): https://github.com/rayon-rs/rayon
