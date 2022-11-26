@@ -46,7 +46,7 @@ fn main() {
 
     let event_loop = EventLoop::new();
     let window = WindowBuilder::new()
-        .with_title("Codotaku CPU Fragment Shader")
+        .with_title("Codotaku CPU Pixel Shader")
         .with_inner_size(PhysicalSize::new(window_size.0 as u32, window_size.1 as u32))
         .build(&event_loop).unwrap();
 
